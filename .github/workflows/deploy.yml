@@ -19,7 +19,7 @@ jobs:
       env:
         SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
         SOURCE: "./"
-        REMOTE_HOST: "3.145.43.244"
+        REMOTE_HOST: 
         REMOTE_USER: "ec2-user"
         TARGET: "/home/ec2-user"
 
