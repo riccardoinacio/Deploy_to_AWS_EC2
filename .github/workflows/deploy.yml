@@ -22,5 +22,5 @@ jobs:
         SOURCE: "./"
         REMOTE_HOST: "3.145.43.244"
         REMOTE_USER: "ec2-user"
-        TARGET: "/home/ec2-user"
+        TARGET: "/var/www/web-server/"
 
