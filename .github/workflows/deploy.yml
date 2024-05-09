@@ -8,7 +8,7 @@ on:
 jobs:
   deploy:
     name: Deploy to EC2
-    runs-on: ubuntu latest
+    runs-on: ubuntu-24.04
 
     steps:
     - name: Checkout the files
@@ -19,7 +19,7 @@ jobs:
       env:
         SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
         SOURCE: "./"
-        REMOTE_HOST: 3.145.43.244
+        REMOTE_HOST: "3.145.43.244"
         REMOTE_USER: "ec2-user"
         TARGET: "/home/ec2-user"
 
